@@ -1,26 +1,44 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>
-Welcome to Aditya's Site.
-</title>
-<style type="text/css">
-body{
-	text-align:center;
-}
-</style>
-</head>
-<body>
-This Site is Under Construction.<br/>
-Will Take a Long Time.<br/><br/>
-In the Mean Time,<br/>
-You can Reach out on:  
-<a href="http://twitter.com/addiittya2006">Twitter<a/><br/>
-||<br/>
-Read Random:  
-<a href="http://medium.com/aditya-writes">@Medium<a/><br/>
-||<br/>
-See me Code:  
-<a href="http://github.com/addiittya2006">Github<a/><br/>
-</body>
+	<head>
+		<title>
+			Welcome to Aditya's Site.
+		</title>
+		<style type="text/css">
+			body{
+				text-align:center;
+			}
+			img{
+				height: 200%;
+				width: 180%;
+				max-width: 400px;
+				max-height: 250px;
+			}
+		</style>
+		</style>
+		<script type="text/javascript">
+			var fun;
+			function reqListener () {
+				fun = JSON.parse(this.responseText);
+				document.getElementById('kitten').src = fun.data.image_url;
+			}
+			var oReq = new XMLHttpRequest();
+			oReq.addEventListener("load", reqListener);
+			oReq.open("GET", "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=funny+cat");
+			oReq.send();
+		</script>
+	</head>
+	<body>
+		This Site is Under Construction.<br/>
+		Will probably Take a Long Time.<br/><br/><br/>
+		In the Mean Time,<br/>
+		You can Reach out on:  <a href="http://twitter.com/addiittya2006">Twitter<a/><br/>
+		||<br/>
+		Read Random:  <a href="http://medium.com/aditya-writes">@Medium<a/><br/>
+		||<br/>
+		See me Code:  <a href="http://github.com/addiittya2006">Github<a/><br/>
+		<br/><br/><br/><br/>
+		Here's a FREE Kitten for you:<br/>
+		<img id="kitten" src="" alt="Unavailable!, Something's Fishy.">
+	</body>
 </html>
