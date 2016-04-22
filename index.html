@@ -1,44 +1,99 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>
-			Welcome to My Site.
-		</title>
-		<style type="text/css">
-			body{
-				text-align:center;
-			}
-			img{
-				height: 200%;
-				width: 180%;
-				max-width: 400px;
-				max-height: 250px;
-			}
-		</style>
-		</style>
-		<script type="text/javascript">
-			var fun;
-			function reqListener () {
-				fun = JSON.parse(this.responseText);
-				document.getElementById('kitten').src = fun.data.image_url;
-			}
-			var oReq = new XMLHttpRequest();
-			oReq.addEventListener("load", reqListener);
-			oReq.open("GET", "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=funny+cat");
-			oReq.send();
-		</script>
-	</head>
-	<body>
-		<a src="http://about.me/addiittya">Aditya</a>'s Site is Under Construction.<br/>
-		Will probably Take a Long Time.<br/><br/><br/>
-		In the Mean Time,<br/>
-		You can Reach out on:  <a href="http://twitter.com/addiittya2006">Twitter<a/><br/>
-		||<br/>
-		Read Random:  <a href="http://medium.com/aditya-writes">Medium<a/><br/>
-		||<br/>
-		See me Code:  <a href="http://github.com/addiittya2006">Github<a/><br/>
-		<br/><br/><br/><br/>
-		Here's a FREE Kitten for you:<br/>
-		<img id="kitten" src="" alt="Unavailable!, Something's Fishy.">
-	</body>
+
+<head>
+    <title>Aditya's Site</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Aditya Dua">
+    <meta name="description" content="A Student, Web & Android Developer.">
+    <meta name="author" content="addiittya">
+    
+    <link rel="me" href="https://about.me/addiittya" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="css/static.css">
+    </noscript>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/landing.js"></script>
+    <script language="javascript">
+    document.onmousedown=disableclick;
+    function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         return false;    
+       }
+    }
+    </script>
+
+</head>
+
+
+<body oncontextmenu="return false">
+    <div class="container">
+        <div class="row">
+
+            <div id="divider" class="col-md-10"><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>
+            </div>
+
+            <p id="intro" class="col-md-10"></p>
+
+            <div id="typed-intro" class="col-md-10">
+                <p class="intro-fallback">Happy that you're here.</p>
+                <p class="intro-fallback">I'm Aditya.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="bio">
+        <article class="col-md-10">
+            <p>I'm a Student, Web and Android Enthusiast Currently graduating from <a href="http://jiit.ac.in" rel="nofollow" target="_blank">Jaypee Institute of Information Technology</a> with a Bachelor of Technology in Computer Science. </p>
+            <p>In the last 3 years, I've built many projects for self and for Credits, <a href="http://github.com/fundsofhope" target="_blank">Fundsofhope</a> which was the first idea we agreed to develop upon with a Pure JS backend. </p>
+            <p>I also develop API's and <a href="https://github.com/addiittya2006/Mac-Eclipse-J2EE_sync" target="_blank">Backend Stuff</a> with <a href="https://github.com/addiittya2006/Mac-Netbeans_sync" target="_blank">Java EE</a> which I am learning in to be a Jedi one day.</p>
+            <p>I also love to Code in Ruby and develop Websites with <a href="https://github.com/addiittya2006/Mac-Ruby_sync" target="_blank">Ruby on Rails</a>.</p>
+            <p>I develop <a href="https://github.com/addiittya2006/Mac-Studio_sync" target="_blank" >Mobile Apps</a> for Fun and am also very interested in Creating Interesting Mobile UI's and developing Hybrid Mobile apps.</p>
+            <p>These days, I am working to take on some Innovative Android Projects.</p>
+            <br>
+            <p id="cta"> I'd be glad to connect with you. <a href="mailto:mail@addiittya.xyz" target="_blank" id="cta">Mail me</a> and we'll get in sync.</p>
+
+        </article>
+        <footer class="col-md-10">
+            <div id="divider"><span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>
+            </div>
+            <br>
+            <p><a href="https://www.medium.com/@addiittya" target="_blank">Medium</a> | <a href="https://twitter.com/addiittya2006" target="_blank">Twitter</a> | <a href="https://github.com/addiittya2006" target="_blank">Github</a>
+            </p>
+            <br>
+            <br>
+        </footer>
+    </div>
+    
+    
+    <script>
+        loadBanner();
+        $(function () {
+                $("#intro").typed({
+                    stringsElement: $('#typed-intro'),
+                    typeSpeed: 5,
+                    callback: function () {
+                        $("#divider").fadeOut("slow", function () {
+                            $("#divider").fadeIn("slow", function () {});
+                            $("#bio").fadeIn("slow", function () {});
+                        });
+                    }
+                });            
+        });
+        
+    </script>
+
+</body>
+
 </html>
