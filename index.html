@@ -7,19 +7,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="title" content="Aditya Dua">
-	<meta name="description" content="A Student, Web & Android Developer.">
+	<meta name="description" content="A Student, Web &amp; Android Developer.">
 	<meta name="author" content="addiittya">
 
 	<link rel="me" href="https://about.me/addiittya" />
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-	<script src="js/typed.min.js"></script>
-	<script src="js/landing.js"></script>
+	<script src="typed.min.js"></script>
 	<script language="javascript">
 	document.onmousedown=disableclick;
 	function disableclick(event)
@@ -54,8 +54,7 @@
 			<p>I love to Code in Ruby and develop the web with <a href="https://github.com/addiittya2006/Mac-Ruby_sync" target="_blank">Ruby on Rails</a>.</p>
 			<p>I also try to write some API's and <a href="https://github.com/addiittya2006/Mac-Eclipse-J2EE_sync" target="_blank">Backend Stuff</a> with <a href="https://github.com/addiittya2006/Mac-Netbeans_sync" target="_blank">J2EE</a>.</p>
 			<p>I develop <a href="https://github.com/addiittya2006/Mac-Studio_sync" target="_blank" >Android Apps</a> for Fun and am also very keen towards designing interesting mobile UI's and developing Offline First, Scalable Apps.</p>
-			<p>In the last 3 years, I've built many projects for self and for Credits, most of which are available to fork.</p>
-			<p>These days, I am working to take on some innovative projects, that inspire and interest me.</p>
+			<p>In the last 3 years, I've built many projects for self and for Credits, most of which are available to fork. These days, I am working to take on some innovative projects, that inspire and interest me.</p>
 			<p>I basically love working &amp; developing with UX and OSS, to provide the community with better software, coding one line at a time.</p>
 			<p>I also was a <a href="https://summerofcode.withgoogle.com/archive/2016/projects/6495064293376000/" target="_blank">Google Summer of Code Student</a> in 2016 with the OWASP Foundation working on <a href="https://github.com/nikolamilosevic86/owasp-seraphimdroid" target="_blank">Owasp Seraphimdroid</a>.
 			</p>
@@ -78,6 +77,23 @@
 	</div>
 
 	<script>
+		var loadBanner = function(){
+			var query_string = {};
+			var query = window.location.search.substring(1);
+			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+				if (typeof query_string[pair[0]] === "undefined") {
+					query_string[pair[0]] = decodeURIComponent(pair[1]);
+				} else if (typeof query_string[pair[0]] === "string") {
+					var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
+				query_string[pair[0]] = arr;
+				} else {
+					query_string[pair[0]].push(decodeURIComponent(pair[1]));
+				}
+			}
+			return query_string;
+		}
 		loadBanner();
 		$(function () {
 				$("#intro").typed({
@@ -93,6 +109,5 @@
 			}
 		);
 	</script>
-
 </body>
 </html>

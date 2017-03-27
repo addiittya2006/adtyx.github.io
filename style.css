@@ -1,7 +1,6 @@
 body {
 	overflow-y: scroll;
 	overflow-x: hidden;
-
 }
 
 h1,
@@ -14,6 +13,10 @@ p,
 a {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 a,
@@ -52,25 +55,25 @@ footer {
 	margin: 0px;
 }
 
-	
 #intro {
-	font-size: 6em;
-	font-weight: 700;
+	font-size: 5em;
+	font-weight: 800;
 	color: #FF6138;
 	padding-top: 30px;
 	padding-bottom: 50px;
 }
+
 .intro-fallback{
-	 font-size: 6em;
-	font-weight: 700;
+	font-size: 5em;
+	font-weight: 800;
 	color: #FF6138;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 #typed-intro{
 	padding-bottom: 50px;
 	display:none;
-	
 }
 #divider {
 	font-size: 8em;
@@ -107,7 +110,6 @@ footer {
 #typed-intro,
 #bio {
 	padding-left: 0px;
-	
 }
 
 .container {
