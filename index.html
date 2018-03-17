@@ -38,7 +38,7 @@
 	<div class="container">
 		<div class="row">
 			<div id="divider" class="col-md-10">
-				<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>
+				<span id="dot1"><</span><span id="dot2"></span><span id="dot3">></span>
 			</div>
 			<p id="intro" class="col-md-10"></p>
 			<div id="typed-intro" class="col-md-10">
@@ -50,32 +50,31 @@
 
 	<div class="container" id="bio">
 		<article class="col-md-10">
-			<p>I'm a Student, Web and Android Enthusiast who has graduated from <a href="http://jiit.ac.in" rel="nofollow" target="_blank">Jaypee Institute of Information Technology</a> with a Bachelor of Technology in Computer Science.</p>
+			<p>I'm a Student, Web & Android Enthusiast and a Computer Science Grad. from <a href="http://jiit.ac.in" rel="nofollow" target="_blank">Jaypee Institute of Information Technology</a> with a Bachelor of Technology in Computer Science.</p>
 			<p>I love to code in Ruby and develop the web with <a href="https://github.com/addiittya2006/Mac-Ruby_sync" target="_blank">Ruby on Rails</a>.</p>
 			<p>I develop <a href="https://github.com/addiittya2006/Mac-Studio_sync" target="_blank" >Android Apps</a> for Fun and am also very keen towards designing interesting mobile UI's and developing Offline First, Scalable Apps.</p>
 			<p>I am also familiar with Python and developing for Scale using Django.</p>
 			<p>I also try to write some API's and <a href="https://github.com/addiittya2006/Mac-Eclipse-J2EE_sync" target="_blank">Backend Stuff</a> with <a href="https://github.com/addiittya2006/Mac-Netbeans_sync" target="_blank">J2EE</a>, which I am currently learning to master Java.</p>
 			<p>In the recent past years, I've built many projects for self and for Credits, most of which are available on Github. These days, I am working to take on some innovative projects, that inspire and interest me. I basically love development, design and OSS, to provide the community with better software, coding one line at a time.</p>
 			<p>I also was a <a href="https://summerofcode.withgoogle.com/archive/2016/projects/6495064293376000/" target="_blank">Google Summer of Code Student</a> in 2016 with the OWASP Foundation working on <a href="https://github.com/nikolamilosevic86/owasp-seraphimdroid" target="_blank">Owasp Seraphimdroid</a>.</p>
-			<p>Currently, I am working as a Freelance UX researcher creating and crafting the perfect experience for a user on the Web and Mobile.</p>
-			<br/>
-			<p id="cta"> I'd be glad to connect with you. <a href="mailto:mail@addiittya.xyz" target="_blank" id="cta">Mail me</a> and we'll get in sync.</p>
+			<p>Currently, I am studying design and UX closely, looking forward to creating and crafting the perfect experience for a user on the Web and Mobile.</p>
+			<p>I'd be glad to connect with you.</p>
 		</article>
 		<footer class="col-md-10">
-			<div id="divider">
-				<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>
-			</div>
-			<br>
-			<p>
-			<a href="https://medium.com/@addiittya2006" target="_blank">Medium</a> |
-			<a href="https://twitter.com/addiittya2006" target="_blank">Twitter</a> |
-			<a href="https://github.com/addiittya2006" target="_blank">Github</a> |
-			<a href="https://www.linkedin.com/in/addiittya" target="_blank">LinkedIn</a> |
-			<a href="https://addiittya2006.github.io/assets/resume.pdf" target="_blank">Resumé</a> |
-			<a href="https://addiittya2006.github.io/assets/cv.pdf" target="_blank">Curriculum Vitaé</a>
+			<br/><br/><br/>
+			<p id="links">
+				<a href="mailto:mail@addiittya.xyz" target="_blank" id="cta">&nbsp;Write a Mail&nbsp;</a> |
+				<a href="https://t.me/addiittya" target="_blank">Ping Me!</a> |
+				<a href="https://github.com/addiittya2006" target="_blank">Github</a> |
+				<a href="https://www.linkedin.com/in/addiittya" target="_blank">LinkedIn</a> |
+				<a href="https://medium.com/@addiittya2006" target="_blank">Medium</a> |
+				<a href="https://twitter.com/addiittya" target="_blank">Twitter</a> |
+				<a href="https://addiittya2006.github.io/assets/resume.pdf" target="_blank">Resumé</a> |
+				<a href="https://addiittya2006.github.io/assets/cv.pdf" target="_blank">Curriculum Vitaé</a>
 			</p>
-			<br>
-			<br>
+			<div id="divider">
+					<span id="dot1"><</span><span id="dot2">/</span><span id="dot3">></span>
+			</div>	
 		</footer>
 	</div>
 
@@ -103,10 +102,10 @@
 					stringsElement: $('#typed-intro'),
 					typeSpeed: 5,
 					callback: function () {
-						$("#divider").fadeOut("slow", function () {
-							$("#divider").fadeIn("slow", function () {});
+						// $("#divider").fadeOut("slow", function () {
+							// $("#divider").fadeIn("slow", function () {});
 							$("#bio").fadeIn("slow", function () {});
-						});
+						// });
 					}
 				});
 			}

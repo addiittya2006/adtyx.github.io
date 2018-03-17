@@ -21,7 +21,7 @@ a {
 
 a,
 a:visited {
-	background-color: #FFFF9D;
+	background-color: #E7F3FF;
 	text-decoration: none;
 	color: inherit;
 }
@@ -29,7 +29,7 @@ a:visited {
 a:hover,
 a:active,
 a:focus {
-	background-color: #BEEB9F;
+	background-color: #F2E7FF;
 	text-decoration: none;
 	color: inherit;
 	-webkit-transition: background 0.2s linear;
@@ -58,15 +58,15 @@ footer {
 #intro {
 	font-size: 5em;
 	font-weight: 800;
-	color: #FF6138;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	color: #FF80A9;
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 .intro-fallback{
 	font-size: 5em;
 	font-weight: 800;
-	color: #FF6138;
+	color: #FF80A9;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
@@ -76,8 +76,8 @@ footer {
 	display:none;
 }
 #divider {
-	font-size: 8em;
-	font-weight: 700;
+	font-size: 4em;
+	font-weight: 600;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -86,15 +86,15 @@ footer {
 }
 
 #dot1 {
-	color: #BEEB9F;
+	color: #9FDFEB;
 }
 
 #dot2 {
-	color: #79BD8F;
+	color: #7AB4BD;
 }
 
 #dot3 {
-	color: #00A388;
+	color: #0095A0;
 }
 
 .row {
@@ -106,9 +106,13 @@ footer {
 }
 
 #intro,
-#divider,
 #typed-intro,
 #bio {
+	padding-left: 0px;
+}
+
+#divider {
+	padding-top: 30px;
 	padding-left: 0px;
 }
 
@@ -126,25 +130,29 @@ footer {
 	font-weight: 700;
 }
 
-#cta a,
-#cta a:visited {
-	background-color: #00A388;
-	text-decoration: none;
-	color: #FFF;
+#links {
+	font-size: 1.25em;
 }
 
-#cta a:hover,
-#cta a:active,
-#cta a:focus {
-	background-color: #BEEB9F;
-	text-decoration: none;
-	color: inherit;
-	-webkit-transition: background 0.2s linear;
-	-moz-transition: background 0.2s linear;
-	-ms-transition: background 0.2s linear;
-	-o-transition: background 0.2s linear;
-	transition: background 0.2s linear;
-}
+/* #cta a, */
+/* #cta a:visited { */
+	/* background-color: #0095A0; */
+	/* text-decoration: none; */
+	/* color: #FFF; */
+/* } */
+
+/* #cta a:hover, */
+/* #cta a:active, */
+/* #cta a:focus { */
+	/* background-color: #9FDFEB; */
+	/* text-decoration: none; */
+	/* color: inherit; */
+	/* -webkit-transition: background 0.2s linear; */
+	/* -moz-transition: background 0.2s linear; */
+	/* -ms-transition: background 0.2s linear; */
+	/* -o-transition: background 0.2s linear; */
+	/* transition: background 0.2s linear; */
+/* } */
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
 	.container {
@@ -155,7 +163,7 @@ footer {
 	#intro {
 		font-size: 4.5em;
 		font-weight: 700;
-		color: #FF6138;
+		color: #FF80A9;
 		padding-top: 30px;
 		padding-bottom: 50px;
 	}
@@ -173,7 +181,7 @@ footer {
 	#intro {
 		font-size: 3em;
 		font-weight: 700;
-		color: #FF6138;
+		color: #FF80A9;
 		padding-top: 30px;
 		padding-bottom: 50px;
 	}
